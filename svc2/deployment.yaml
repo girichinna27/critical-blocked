@@ -14,7 +14,7 @@ spec:
       labels:
         app: svc2-service
         ssd.admissionreview.accountname: production
-        ssd.admissionreview.appname: svc2-service
+        ssd.admissionreview.appname: svc2
     spec:
       containers:
       - name: svc2-service
