@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: svc1-service
+  name: svc1-service
+spec:
+  selector:
+    matchLabels:
+      app: svc1-service
+  replicas: 1 # tells deployment to run 2 pods matching the template
+  template:
+    metadata:
+      labels:
+        app: svc1-service
+        ssd.admissionreview.accountname: production
+        ssd.admissionreview.appname: svc1-service
+    spec:
+      containers:
+      - name: svc1-service
+        image: opsmx11/spring-service-production:1b4e55a-16
