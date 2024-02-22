@@ -18,4 +18,4 @@ spec:
     spec:
       containers:
       - name: opsmx-service
-        image: opsmx11/spring-service-production:1b4e55a-17
+        image: opsmx11/spring-service-production:1b4e55a-16
