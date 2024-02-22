@@ -2,20 +2,20 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: blocked-service
-  name: blocked-service
+    app: spring-service
+  name: spring-service
 spec:
   selector:
     matchLabels:
-      app: blocked-service
+      app: spring-service
   replicas: 1 # tells deployment to run 2 pods matching the template
   template:
     metadata:
       labels:
-        app: blocked-service
+        app: spring-service
         ssd.admissionreview.accountname: production
-        ssd.admissionreview.appname: blocked-service
+        ssd.admissionreview.appname: spring-service
     spec:
       containers:
-      - name: blocked-service
+      - name: spring-service
         image: opsmx11/spring-service-production:0373c59-2
