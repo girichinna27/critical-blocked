@@ -14,7 +14,7 @@ spec:
       labels:
         app: spring-service
         ssd.admissionreview.accountname: production
-        ssd.admissionreview.appname: spring-service
+        ssd.admissionreview.appname: blocked-service
     spec:
       containers:
       - name: spring-service
