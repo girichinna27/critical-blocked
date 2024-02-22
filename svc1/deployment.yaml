@@ -18,4 +18,4 @@ spec:
     spec:
       containers:
       - name: svc1-service
-        image: opsmx11/spring-service-production:1b4e55a-16
+        image: opsmx11/spring-service-production:1b4e55a-13
